@@ -9,7 +9,7 @@
  */
 #include <EEPROM.h>
 const byte BUTTON = 2; // Modificare con il PIN scelto anche in base al tipo di scheda
-volatile byte stato = 1;
+volatile byte stato;
 volatile unsigned long tempo;
 
 
