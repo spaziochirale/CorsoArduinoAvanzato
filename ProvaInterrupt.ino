@@ -24,7 +24,7 @@ void buttonPressed() {
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(BUTTON, INPUT);
-  attachInterrupt(digitalPinToInterrupt(BUTTON), buttonPressed, FALLING);
+  attachInterrupt(digitalPinToInterrupt(BUTTON), buttonPressed, FALLING); // Modificare la modalità di Interrupt in base al proprio circuito
   Serial.begin(9600);
   
 
